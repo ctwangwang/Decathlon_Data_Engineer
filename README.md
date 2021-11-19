@@ -22,7 +22,7 @@ For the second task, it should just run the ipython notebook cell by cell and wi
 
 Task 2B: Redshift pipeline - SQL (Decathlon_task2B.sql)
 
-- I created a Redshift cluster, and upload "transaction_detail.csv" to S3 bucket, after setting up the security group, I used SQLWorkbenchJ to connect to the Redshift cluster and do the SQL operations
+- I created a Redshift cluster, and upload "transaction_detail.csv" to S3 bucket, after setting up the security group, and create an user with S3 read only access, and I used SQLWorkbenchJ 2 to connect to the Redshift cluster and do the SQL operations, when connecting to Redshift cluster, it needs the Redshift driver, JDBC URL to connect to the cluster, the JDBC URL is jdbc:redshift://redshift-cluster-1.cmclmjyxcbir.us-east-2.redshift.amazonaws.com:5439/dev, and Redshift driver is redshift-jdbc42-2.0.0.4.jar in the repository
 - From the "transaction_detail.csv", I found that there are sale/return records for each store and sgtin_hash, and the number of sale/return records for each store and sgtin_hash are from 1 to 14 times, and the question is to ask the average days between sale and return of all items per store, so I think it is to calculate the date difference of the earliest day and the latest date, and divide the number of cases, which is the average days per transaction record, and I call it fluidity, as I think if fluidity is bigger, then it means the products of the store make more transactions over a certain period of time. And I calculate the average fluidity of each store as result.
 
 
