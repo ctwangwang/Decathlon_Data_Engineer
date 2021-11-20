@@ -26,5 +26,12 @@ Task 2B: Redshift pipeline - SQL (Decathlon_task2B.sql)
 - From the "transaction_detail.csv", I found that there are sale/return records for each store and sgtin_hash, and the number of sale/return records for each store and sgtin_hash are from 1 to 14 times, and the question is to ask the average days between sale and return of all items per store, so I think it is to calculate the date difference of the earliest day and the latest date, and divide the number of cases, which is the average days per transaction record, and I call it fluidity, as I think if fluidity is bigger, then it means the products of the store make more transactions over a certain period of time. And I calculate the average fluidity of each store as result.
 
 
+[BONUS]Data Exposure - Python
+
+- Install Streamlit framework by typing "pip install streamlit"
+- Run Streamlit script by typing "streamlit run Streamlit.py"
+- It will show up a website, and you can query the tables by typing the SQL request.
+
+
 PS: I also added a word file named "Decathlon Data Engineer Case Study" to save the snapshot of the result for each task.
 
