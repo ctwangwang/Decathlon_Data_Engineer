@@ -30,7 +30,7 @@ Task 2B: Redshift pipeline - SQL (Decathlon_task2B.sql)
 
 - Install Streamlit framework by typing "pip install streamlit"
 - Run Streamlit script by typing "streamlit run Streamlit.py"
-- It will show up a website, and you can query the tables by typing the SQL request.
+- It will show up a website, and you can query the tables by typing the SQL request, and there is some table schema information in the block of "Table Info" for reference.
 
 
 PS: I also added a word file named "Decathlon Data Engineer Case Study" to save the snapshot of the result for each task.
